@@ -9,72 +9,65 @@
     box-sizing: border-box;
 }
 
-html, body{
+body{
     background: rgb(242, 235, 227);
-    height: 100vh;
+    height: 97vh;
     width: 100vw;
 }
 
-a, form{
+@media (max-width: 600px){
+    a, form{
     font-family: 'Montserrat';
     font-size: 14px;
     font-weight: 700;
     text-decoration: none;
     text-align: center;
     color: white;
-}
+    }
 
-p{
+    p{
     font-size: 14px;
     font-weight: 400;
     font-family: 'Montserrat';
     color: hsl(228, 12%, 48%);
     padding-bottom: 10px;
-}
-h2{
+    }
+    h2{
     font-family: 'Fraunces';
     font-weight: 700;
     color: rgb(60, 128, 103);
     font-size: 32px;
-}
+    }
 
-h3{ 
+    h3{ 
     font-size: 1em;
     font-weight: 400;
     font-family: 'Montserrat';
     text-decoration: line-through;
     color: rgb(108, 114, 137);
-}
-.titulo{
+    }
+    .titulo{
     color: rgb(28, 35, 43);
     text-align: left;
     font-weight: 700;
     font-family: 'Fraunces';
     font-size: 1.8rem;
     margin: 10px 0px;
-}
-span{
+    }
+    span{
     font-weight: 400 ;
     margin-right: 5px;
     display: flex;
     align-items: center;
-} 
-span{
-    font-weight: 400 ;
-    margin-right: 5px;
-    display: flex;
-    align-items: center;
-}
+    } 
 
-@media (max-width: 600px){
     main{
         display: flex;
-        padding: 20px;
     }
 
     section{
         display: block;
-        box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.349);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.349);
         border-radius: 15px;
         width: 85vw;
         height: 90vh;
@@ -113,7 +106,14 @@ span{
         margin-top: 5px;
         
     }
- 
+
+    footer{
+        bottom: 0;
+        position: fixed;
+        width: 90%;
+        text-align: center;
+
+    }
     .anuncio{
         display: block;
         margin: 20px;
@@ -131,61 +131,3 @@ span{
         border-radius: 15px 15px 0px 0px;
     }
 }
-@media screen and (min-width: 600px){
-    main{
-        display: block;
-        width: 100vw;
-        height: 100vh;
-        justify-content: center;
-        
-    }
-    section{
-        display: block;
-        border: 1px solid black;
-        width: 600px;
-        height: 400px;
-        border-radius: 15px;
-        overflow: hidden;
-        
-    }
-    .desktop{
-        display: grid;
-        height: 100vh;
-        width: 50%;
-        float: left;
-        overflow: hidden;
-    }
-    .anuncio{
-        display: grid;
-        height: 50%;
-        width: 50%;
-        float: right;
-
-    } 
-    .botao{
-        border: none;
-        border-radius: 10px;
-        display: block; 
-        margin-top: 10px;
-        padding: 10px;
-        background: hsl(158, 36%, 37%);   
-        justify-content: center;
-        cursor: pointer;
-        
-    }
-    .botao:hover{
-        background: hsl(212, 21%, 14%);
-    }
-    .botao > a {
-        font-size: 14px;
-        font-weight: 700;
-        font-family: 'Montserrat';
-        color: rgb(255, 255, 255);
-        text-align: center;
-        margin-top: 5px;
-        
-    }
-    
-}
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
