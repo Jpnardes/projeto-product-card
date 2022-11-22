@@ -15,7 +15,7 @@ body{
     width: 100vw;
 }
 
-@media (max-width: 600px){
+@media (max-width: 669px){
     a, form{
     font-family: 'Montserrat';
     font-size: 14px;
