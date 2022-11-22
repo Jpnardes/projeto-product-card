@@ -73,7 +73,6 @@ body{
         height: 90vh;
         margin: 0 auto;
         background-color: white;
-
         overflow: hidden;
         
     }
@@ -104,6 +103,7 @@ body{
         color: rgb(255, 255, 255);
         text-align: center;
         margin-top: 5px;
+        cursor: pointer;
         
     }
 
